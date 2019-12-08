@@ -14,13 +14,13 @@ composer require lizhaoyang/captcha
 
 ```
 return [
-    'fontSize' => env('CAPTCHA_FONTSIZE', 25),
-    'useCurve' => env('CAPTCHA_USECURVE', true), 
-    'useNoise' => env('CAPTCHA_USENOISE', true),
-    'imageH'   => env('CAPTCHA_IMAGE_WIDTH', 0),
-    'imageW'   => env('CAPTCHA_IMAGE_HEIGHT', 0),
-    'length'   => env('CAPTCHA_LENGTH', 5),
-    'bg'       => env('CAPTCHA_BG', [243, 251, 254]),
+    'fontSize' => env('CAPTCHA_FONTSIZE', 25),//验证码文字大小
+    'useCurve' => env('CAPTCHA_USECURVE', true), //是否有干扰线
+    'useNoise' => env('CAPTCHA_USENOISE', true),//是否有背景文字 
+    'imageH'   => env('CAPTCHA_IMAGE_WIDTH', 0),//图片高度 
+    'imageW'   => env('CAPTCHA_IMAGE_HEIGHT', 0),//图片宽度
+    'length'   => env('CAPTCHA_LENGTH', 5), //验证码长度
+    'bg'       => env('CAPTCHA_BG', [243, 251, 254]),//背景颜色
     'reset'    => env('CAPTCHA_RESET', true)
 ];
 ```
